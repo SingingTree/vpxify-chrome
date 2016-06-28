@@ -1,0 +1,22 @@
+{
+  "name": "vpxify",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Makes YouTube stream VP8/VP9 videos instead of H.264 videos",
+  "homepage_url": "",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "src/inject/inject.js",
+        "src/inject/content_script.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "options_page": "options.html",
+  "permissions": [ "storage" ]
+}
