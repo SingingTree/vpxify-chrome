@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "description": "Makes YouTube stream VP8/VP9 videos instead of H.264 videos",
-  "homepage_url": "",
+  "homepage_url": "https://github.com/SingingTree/vpxify-chrome",
   "content_scripts": [
     {
       "matches": [
